@@ -1,0 +1,81 @@
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: $fontSize;
+  color: white;
+}
+.btn{
+    background-color: $primaryColor;
+    padding: 0.7rem 0.7rem;
+      border-radius: 0.3rem;
+}
+// NAVBAR STARTS
+header {
+  background: url("img/background.jpg") no-repeat center center/cover;
+  // opacity: .8;
+  height: 1000px;
+  width: 1518px;
+  z-index: -1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    & img {
+      width: 12rem;
+    }
+  }
+
+  &__btns {
+    &__signIn {
+      width: 5rem;
+      border: none;
+      color: $fontColor;
+      font-weight: 600;
+      
+    }
+
+    &__select {
+      color: $fontColor;
+      border: 2px solid $fontColor;
+      background: transparent;
+
+      .world{
+        width: 14px;
+      }
+      .arrow{
+        width: 20px;
+      }
+    }
+  }
+}
+// HEADER INSIDE
+.header__inside{
+  text-align: center;
+
+  &__text{
+    h4{
+      margin: .5rem 0rem;
+    }
+  }
+
+  &__btns{
+    margin-top: 1rem;
+    input{
+      width: 36rem;
+      height: 3rem;
+    }
+    button{
+      margin: 0;
+      color: $fontColor;
+      font-weight: 600;
+      width: 10rem;
+      height: 3rem;
+    }
+  }
+}
