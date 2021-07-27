@@ -3,21 +3,80 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
-  font-size: $fontSize;
+  // font-size: $fontSize;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
-.btn{
-    background-color: $primaryColor;
-    padding: 0.7rem 0.7rem;
-      border-radius: 0.3rem;
+.btn {
+  background-color: $primaryColor;
+  padding: 0.7rem 0.7rem;
+  border-radius: 0.3rem;
+}
+.sign-in {
+  display: none;
+  height: 40rem;
+  width: 30rem;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.4s ease-in-out;
+
+  &__inside {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+      padding: 1rem 1rem;
+      background-color: rgb(26, 23, 23);
+      color: gray;
+      font-weight: 600;
+      margin: 0.8rem 0;
+      border: none;
+      outline: none;
+    }
+
+    &__btn {
+      background-color: red;
+      color: white;
+      font-weight: bolder;
+      font-size: large;
+      padding: 1rem 0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        background-color: rgb(173, 15, 15);
+      }
+    }
+
+    &__checkbox {
+      display: flex;
+      justify-content: space-between;
+      color: gray;
+      margin: 0.4rem;
+
+      label {
+        font-size: 0.9rem;
+        transform: translateX(-70px);
+      }
+      a {
+        font-size: 0.9rem;
+        color: gray;
+        text-decoration: none;
+      }
+    }
+  }
 }
 // NAVBAR STARTS
 header {
   background: url("img/background.jpg") no-repeat center center/cover;
   // opacity: .8;
-  height: 1000px;
+  height: 800px;
   width: 1518px;
   z-index: -1;
 }
@@ -37,7 +96,6 @@ header {
       border: none;
       color: $fontColor;
       font-weight: 600;
-      
     }
 
     &__select {
@@ -45,32 +103,34 @@ header {
       border: 2px solid $fontColor;
       background: transparent;
 
-      .world{
+      .world {
         width: 14px;
       }
-      .arrow{
+      .arrow {
         width: 20px;
       }
     }
   }
 }
 // HEADER INSIDE
-.header__inside{
+.header__inside {
+  font-size: 2rem;
   text-align: center;
+  margin: 9rem 0;
 
-  &__text{
-    h4{
-      margin: .5rem 0rem;
+  &__text {
+    h4 {
+      margin: 0.5rem 0rem;
     }
   }
 
-  &__btns{
+  &__btns {
     margin-top: 1rem;
-    input{
+    input {
       width: 36rem;
       height: 3rem;
     }
-    button{
+    button {
       margin: 0;
       color: $fontColor;
       font-weight: 600;
@@ -79,3 +139,83 @@ header {
     }
   }
 }
+
+// tv starts
+.tv {
+  border-top: 6px solid gray;
+  border-bottom: 6px solid gray;
+
+  &__inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+    &__right {
+      font-size: larger;
+      h1 {
+      }
+      p {
+        margin: 0.8rem 0;
+      }
+    }
+    &__left {
+    }
+  }
+}
+// tv ends
+// downlod
+.download {
+  border-top: 6px solid gray;
+  border-bottom: 4px solid gray;
+
+  &__inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+    &__right{
+      p{
+        margin: 10px 0;
+
+      }
+    }
+  }
+}
+
+// FOOTER STARTS
+.footer {
+  h2 {
+    margin: 0.7rem 0 0.7rem 8.7rem;
+  }
+  .fa {
+    color:grey;
+    text-decoration: none;
+    margin: 1rem 0 1rem 8.9rem;
+  }
+.footer__btn{
+  margin: .7rem 0 .7rem 8.9rem;
+}
+
+  &__inside {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+
+    .same {
+      li {
+        list-style: none;
+        margin: 0.9rem 0;
+      }
+      a {
+        text-decoration: none;
+        color: gray;
+      }
+    }
+  }
+}
+// FOOTER ENDS

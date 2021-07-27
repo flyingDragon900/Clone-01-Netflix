@@ -17,9 +17,31 @@
             <div class="navbar__btns">
                 <button class="navbar__btns__select btn"><img src="img/world.png" class="world"> English <img
                         src="img/arrow outline.png" class="arrow"></button>
-                <button class="navbar__btns__signIn btn">Sign in</button>
+                <button id="sign" class="navbar__btns__signIn btn" onclick="">Sign in</button>
             </div>
         </nav>
+        <!-- SIGN STARTS -->
+        <div id="signIn" class="sign-in">
+            <div class="sign-in__inside">
+                <h1>Sign In</h1>
+                <input type="email" name="email" id="email" class="sign-in__inside__input"
+                    placeholder="Email or phone number">
+                <input type="password" name="password" id="password" class="sign-in__inside__input"
+                    placeholder="Password">
+                <button id="signInBnt" class="sign-in__inside__btn">Sign In</button>
+                <div class="sign-in__inside__checkbox">
+                    <input type="checkbox" name="rememberMe" id="rememberMe"><label for="rememberMe">remember me</label>
+                    <a href="#">Need help?</a>
+                </div>
+
+                <img src="" alt="facebook">
+                <h6>Login with Facebook</h6>
+                <h5>New to Netflix?</h5> <a href="#">Sign up now.</a>
+                <p>This page is proctected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <!-- SIGN ENDS -->
 
         <!-- HEADER INSIDE -->
         <div class="header__inside">
@@ -33,6 +55,80 @@
             </div>
         </div>
     </header>
+
+    <!-- tv section -->
+    <section class="tv" id="tv">
+        <div class="tv__inside">
+            <div class="tv__inside__right">
+                <h1>Enjoy on your TV.</h1>
+                <p>Watch on smart TVs,Playstation,Xbox <br>
+                    Chromecast,Apple TV,Blu-ray players and <br>more.</p>
+            </div>
+            <div class="tv__inside__left">
+                <img src="img/tv.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- tv section ends -->
+
+    <!-- download section -->
+    <section class="download" id="download">
+        <div class="download__inside">
+            <div class="download__inside__left">
+                <img src="img/mobile-0819.jpg" alt="">
+            </div>
+            <div class="download__inside__right">
+                <h1>Download your shows to watch offline.</h1>
+                <p>Save your favourite easily and always have somthing to watch</p>
+            </div>
+        </div>
+    </section>
+    <!-- download section ends -->
+
+    <!-- FOOTER STARTS -->
+    <div id="footer" class="footer">
+        <h2>Questions?Call 000-800-040-1843</h2>
+        <div class="footer__inside">
+            <div class="footer__inside__01 same">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Speed Test</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__inside__02 same">
+                <ul>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Cookie preferences</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__inside__03 same">
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Ways To Watch</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                    <li><a href="#">Only on Netflix</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__inside__04 same">
+                <ul>
+                    <li><a href="#">Media centre</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <button class="navbar__btns__select btn footer__btn"><img src="img/world.png" class="world"> English <img
+                src="img/arrow outline.png" class="arrow"></button> <br>
+        <a href="www.netflix.com" class="fa">Netflix India</a>
+    </div>
+    <!-- FOOTER ENDS -->
 </body>
 <!-- External javascript -->
 <script src="app.js"></script>
