@@ -177,14 +177,92 @@ header {
     width: 80%;
     margin: auto;
 
-    &__right{
-      p{
+    &__right {
+      p {
         margin: 10px 0;
-
       }
     }
   }
 }
+
+// Watch section starts
+.watch {
+  border-top: 4px solid gray;
+  border-bottom: 4px solid gray;
+
+  &__inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+    p {
+      margin: 10px 0;
+    }
+  }
+}
+// Watch section ends
+
+// Children section starts
+.children {
+  border-top: 3px solid gray;
+  border-bottom: 4px solid gray;
+
+  &__inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+    p {
+      margin: 10px 0;
+    }
+  }
+}
+// Children section ends
+
+// FAQ STARTS
+.faq {
+  h1,
+  p,
+  .faq__outside__btn {
+    text-align: center;
+    margin: 1.7rem 0;
+  }
+
+  &__inside {
+    width: 50%;
+    margin: auto;
+
+    .plus img{
+      width: 1.5rem;
+    }
+    &__btn {
+      text-align: left;
+      display: block;
+      width: 100%;
+      margin: 1rem 0;
+      padding: 0.8rem 0;
+      background-color: gray;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .tab{
+      display: none;
+    }
+  }
+}
+// FAQ ENDS
 
 // FOOTER STARTS
 .footer {
@@ -192,13 +270,13 @@ header {
     margin: 0.7rem 0 0.7rem 8.7rem;
   }
   .fa {
-    color:grey;
+    color: grey;
     text-decoration: none;
     margin: 1rem 0 1rem 8.9rem;
   }
-.footer__btn{
-  margin: .7rem 0 .7rem 8.9rem;
-}
+  .footer__btn {
+    margin: 0.7rem 0 0.7rem 8.9rem;
+  }
 
   &__inside {
     display: flex;
