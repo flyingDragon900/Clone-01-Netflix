@@ -77,7 +77,7 @@ header {
   background: url("img/background.jpg") no-repeat center center/cover;
   // opacity: .8;
   height: 800px;
-  width: 1518px;
+  width: auto;
   z-index: -1;
 }
 .navbar {
@@ -236,9 +236,10 @@ header {
     width: 50%;
     margin: auto;
 
-    .plus img{
+    .plus img {
       width: 1.5rem;
     }
+
     &__btn {
       text-align: left;
       display: block;
@@ -257,7 +258,7 @@ header {
       align-items: center;
     }
 
-    .tab{
+    .tab {
       display: none;
     }
   }
@@ -297,3 +298,52 @@ header {
   }
 }
 // FOOTER ENDS
+
+// MEDIA QUARIES
+@media (max-width: 1080px) and (min-width: 768px) {
+}
+@media (max-width: 768px) and (min-width: 480px) {
+  .tv,
+  .watch,
+  .download,
+  .children img {
+    width: 2rem;
+  }
+}
+@media (max-width: 480px) and (min-width: 375px) {
+}
+@media (max-width: 375px) and (min-width: 0px) {
+  header{
+    width: auto;
+    height: auto;
+  }
+  .header__inside{
+    font-size: 1rem;
+  }
+  .tv,
+  .children {
+    &__inside {
+      flex-direction: column-reverse;
+    }
+  }
+  .download,
+  .watch {
+    &__inside {
+      flex-direction: column;
+    }
+  }
+
+  .header__inside__btns input{
+    width: auto;
+  }
+  .all{
+    width: 370px;
+  }
+  .faq__inside__btn{
+    font-size: smaller;
+    width: 120%;
+  }
+  .footer__inside{
+    flex-wrap: wrap;
+  }
+}
